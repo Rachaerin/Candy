@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* plugins */
+
+/* customize */
+@import "./base.css";
+@import "./customize.css";
