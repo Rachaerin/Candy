@@ -1,6 +1,7 @@
 import TailwindLink from "@/components/ui/TailwindLink";
 import { DEFAULT_WEB_TITLE } from "@/lib/_metadata";
 import Image from "next/image";
+import mountains from "../public/img/Anime_girl_with_blue_hair.webp";
 
 export default function Home() {
   return (
@@ -8,9 +9,11 @@ export default function Home() {
       <h1 className="text-2xl my-4 font-bold">{DEFAULT_WEB_TITLE}</h1>
       <div className="relative h-[200px] md:h-[300px]">
         <Image
-          src="/img/Anime_girl_with_blue_hair.webp"
+          src={mountains}
           alt="cover"
           fill
+          preload
+          placeholder="blur"
           objectFit="cover"
         />
       </div>
@@ -49,7 +52,8 @@ export default function Home() {
         <TailwindLink href="/travel">Travel</TailwindLink>,{" "}
         <TailwindLink href="/books">Books</TailwindLink>,{" "}
         <TailwindLink href="/games">Games</TailwindLink>,{" "}
-        <TailwindLink href="tv">Film & TV</TailwindLink>.
+        <TailwindLink href="tv">Film & TV</TailwindLink>,{" "}
+        <TailwindLink href="tv">Friends</TailwindLink>.
       </h3>
     </main>
   );
